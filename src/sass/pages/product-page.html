@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InforShop</title>
+    <link rel="stylesheet" href="../../../dist/styles/main.css">
+    <script src="https://kit.fontawesome.com/069baf1ef0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo-box">
+            <a href="../../../index.html"><img src="../images/inforshop.png" alt="" class="logo">
+            </a>
+        </div>
+        <form class="form-search-box">
+            <label for="search"></label>
+            <input type="search" class="search-input" id="search" name="search" placeholder="Chercher un produit ...">
+            <img src="../images/search2.png" alt="" class="search-icon">
+        </form>
+        <div class="user-and-cart-container">
+            <div class="user-icon-container">
+                <a href="connection.html"><img src="../images/user2.png" alt="User Icon" class="user-icon"></a>
+            </div>
+            <div class="cart-icon-container">
+                <a href="cart.html"><img src="../images/cart2.png" alt="Cart Icon" class="cart-icon">
+                    <div class="cart-count-container">
+                        <span class="cart-count">0</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="../../../index.html">Accueil</a></li>
+            <li><a href="products.html">Produits</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger-container active">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </div>
+    <div class="x-button-container">
+        <span class="x-button-line x-button-first-line"></span>
+        <span class="x-button-line x-button-second-line"></span>
+    </div>
+</header>
+
+    <!--    <div class="sub-nav">-->
+    <!--        <a href="../../../index.html"> <img src="../images/home.png" alt="Home icon" class="home-icon"></a>-->
+    <!--        <i class="fa-solid fa-angle-right sub-nav-arrow" ></i>-->
+    <!--        &lt;!&ndash;        <a href="connection.html" class="navigation-button connection">Connexion</a>&ndash;&gt;-->
+    <!--    </div>-->
+    <div class="sub-nav">
+
+
+        <a href="../../../index.html"> <img src="../images/home.png" alt="Home icon" class="home-icon"></a>
+        <i class="fa-solid fa-angle-right sub-nav-arrow"></i>
+        <a href="products.html" class="navigation-button connection">Pc de bureau</a>
+        <i class="fa-solid fa-angle-right sub-nav-arrow"></i>
+        <a href="product-page.html" class="navigation-button connection">Ecran AOC Gaming 144 hz</a>
+        <i class="fa-solid fa-angle-right sub-nav-arrow"></i>
+    </div>
+<main class="main">
+
+    <div class="product-description-container">
+        <h1 class="product-description-heading">Ecran AOC Gaming 144 hz</h1>
+        <div class="product-description-img-container">
+            <img class="product-description-img" src="../images/pc.png" alt="">
+        </div>
+        <div class="product-info-container">
+            <h2 class="product-info-heading">Description</h2>
+            <p class="product-info-detail">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                recently with desktop publishing software. make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                recently with desktop publishing software.</p>
+           <div class="product-info-sub-container">
+               <div class="product-price"><span class="price">395</span> €</div>
+               <div class="stock-remaining"><span class="stock-remaining-quantity">15</span> en stock</div>
+                <div class="quantity-add-cart-container">
+               <label for="product-quantity"></label>
+               <input type="number" id="product-quantity" class="product-quantity" name="product-quantity" min="0" max="100" step="1" value="1">
+               <button class="product-info-add-button">
+                   <img class="add-product-button-img" src="../images/cart3.png" alt=""> Ajouter au panier
+               </button>
+                </div>
+               <form action="">
+                   <label for="colors"></label>
+                   <select name="cars" id="colors">
+                       <option value="black">Noir</option>
+                       <option value="white">Blanc</option>
+                       <option value="orange">Orange</option>
+                   </select>
+               </form>
+
+           </div>
+
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer-container">
+        <p>© Inforshop.store & site by <span class="footer-created-by">ISL SCRL</span></p>
+    </div>
+</footer>
+<script src="../scripts/main.js"></script>
+</body>
+</html>
