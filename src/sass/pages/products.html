@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InforShop</title>
+    <link rel="stylesheet" href="../../../dist/styles/main.css">
+    <script src="https://kit.fontawesome.com/069baf1ef0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo-box">
+            <a href="../../../index.html"><img src="../images/inforshop.png" alt="" class="logo">
+            </a></div>
+        <form class="form-search-box">
+            <label for="search"></label>
+            <input type="search" class="search-input" id="search" name="search" placeholder="Chercher un produit ...">
+            <img src="../images/search2.png" alt="" class="search-icon">
+        </form>
+        <div class="user-and-cart-container">
+            <div class="user-icon-container">
+                <a href="connection.html"><img src="../images/user2.png" alt="User Icon" class="user-icon"></a>
+            </div>
+            <div class="cart-icon-container">
+                <a href="cart.html"><img src="../images/cart2.png" alt="Cart Icon" class="cart-icon">
+                    <div class="cart-count-container">
+                        <span class="cart-count">0</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="../../../index.html">Accueil</a></li>
+            <li><a href="products.html">Produits</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger-container active">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </div>
+    <div class="x-button-container">
+        <span class="x-button-line x-button-first-line"></span>
+        <span class="x-button-line x-button-second-line"></span>
+    </div>
+</header>
+<div class="main-container main">
+    <div class="sub-nav">
+        <a href="../../../index.html"> <img src="../images/home.png" alt="Home icon" class="home-icon"></a>
+        <i class="fa-solid fa-angle-right sub-nav-arrow"></i>
+        <a href="products.html" class="navigation-button connection">Pc de bureau</a>
+    </div>
+    <div class="products-page-heading">Pc de bureau</div>
+    <main class="products-page-main">
+        <aside class="products-page-aside">
+            <h4 class="filter-heading">Filter</h4>
+            <div class="filter-inner-section">
+                <h5>Marques</h5>
+                <div class="brand-checkbox-container">
+                    <label>
+                        <input type="checkbox" name="checkbox" value="1"> Razer
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="1"> Logitech
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="1"> hp
+                    </label>
+                </div>
+            </div>
+            <div class="filter-inner-section">
+                <h5>Prix</h5>
+                <div class="brand-price-range">
+                    <label for="min-quantity">Min value:</label>
+                    <div class="input-container price-input"><input type="number" class="input-min" id="min-quantity"
+                                                                    name="quantity" min="0"
+                                                                    max="2500" step="100" value="0">
+                        <!--                        <div class="increment-decrement-btn-container">-->
+                        <!--                            <i class="fa-solid fa-angle-up fa-angle-up-min increment-decrement-btn"></i>-->
+                        <!--                            <i class="fa-solid fa-angle-down fa-angle-down-min increment-decrement-btn"></i>-->
+                        <!--                        </div>-->
+                    </div>
+
+                    <div class="input-container price-input">
+                        <label for="max-quantity">Max value: </label>
+                        <input type="number" id="max-quantity" class="input-max" name="quantity" min="0" max="2500"
+                               step="100" value="2500">
+                    </div>
+
+                    <div class="slider">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                        <label>
+                            <input type="range" class="range-min" min="0" max="2500" value="0" step="100">
+                        </label>
+                        <label>
+                            <input type="range" class="range-max" min="0" max="2500" value="2500" step="100">
+                        </label>
+                        <span id="range-min-quantity">0</span>
+                        <span id="range-max-quantity">2500</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="filter-inner-section">
+                <h5>Disponibilité</h5>
+                <label>
+                    <input type="checkbox" name="checkbox" value="1"> En stock
+                </label>
+            </div>
+
+        </aside>
+        <div class="article">
+            <div class="product-page-numbers top-page-numbers">
+                <div class="page-number one active">1</div>
+                <div class="page-number two">2</div>
+                <div class="page-number three">3</div>
+            </div>
+            <div class="products-list">
+                <div class="product">
+                    <div class="product-img-container">
+                        <img class="product-img" src="../images/case.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <a href="product-page.html">
+                            <div class="product-heading">HP Pavilion Gaming</div>
+                        </a>
+                        <div class="product-detail">Parfait PC pour le gaming</div>
+                        <div class="stock-remaining"><span class="stock-remaining-quantity">15</span> en stock</div>
+                        <div class="product-price"><span class="price">1750</span> €</div>
+                    </div>
+                    <button class="add-product-button">
+                        <img class="add-product-button-img" src="../images/cart3.png" alt="">
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="product-img-container">
+                        <img class="product-img" src="../images/case.png" alt="">
+                    </div>
+
+                    <div class="product-info">
+                        <a href="product-page.html">
+                            <div class="product-heading">HP Pavilion Gaming</div>
+                        </a>
+                        <div class="product-detail">Parfait PC pour le gaming</div>
+                        <div class="stock-remaining"><span class="stock-remaining-quantity">15</span> en stock</div>
+                        <div class="product-price"><span class="price">1750</span> €</div>
+                    </div>
+                    <button class="add-product-button">
+                        <img class="add-product-button-img" src="../images/cart3.png" alt="">
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="product-img-container">
+                        <img class="product-img" src="../images/case.png" alt="">
+                    </div>
+
+                    <div class="product-info">
+                        <a href="product-page.html">
+                            <div class="product-heading">HP Pavilion Gaming</div>
+                        </a>
+                        <div class="product-detail">Parfait PC pour le gaming</div>
+                        <div class="stock-remaining"><span class="stock-remaining-quantity">15</span> en stock</div>
+                        <div class="product-price"><span class="price">1750</span> €</div>
+                    </div>
+                    <button class="add-product-button">
+                        <img class="add-product-button-img" src="../images/cart3.png" alt="">
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="product-img-container">
+                        <img class="product-img" src="../images/case.png" alt="">
+                    </div>
+
+                    <div class="product-info">
+                        <a href="product-page.html">
+                            <div class="product-heading">HP Pavilion Gaming</div>
+                        </a>
+                        <div class="product-detail">Parfait PC pour le gaming</div>
+                        <div class="stock-remaining"><span class="stock-remaining-quantity">15</span> en stock</div>
+                        <div class="product-price"><span class="price">1750</span> €</div>
+                    </div>
+                    <button class="add-product-button">
+                        <img class="add-product-button-img" src="../images/cart3.png" alt="">
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="product-img-container">
+                        <img class="product-img" src="../images/case.png" alt="">
+                    </div>
+
+                    <div class="product-info">
+                        <a href="product-page.html">
+                            <div class="product-heading">HP Pavilion Gaming</div>
+                        </a>
+                        <div class="product-detail">Parfait PC pour le gaming</div>
+                        <div class="stock-remaining"><span class="stock-remaining-quantity">15</span> en stock</div>
+                        <div class="product-price"><span class="price">1750</span> €</div>
+                    </div>
+                    <button class="add-product-button">
+                        <img class="add-product-button-img" src="../images/cart3.png" alt="">
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="product-img-container">
+                        <img class="product-img" src="../images/case.png" alt="">
+                    </div>
+
+                    <div class="product-info">
+                        <a href="product-page.html">
+                            <div class="product-heading">HP Pavilion Gaming</div>
+                        </a>
+                        <div class="product-detail">Parfait PC pour le gaming</div>
+                        <div class="stock-remaining"><span class="stock-remaining-quantity">15</span> en stock</div>
+                        <div class="product-price"><span class="price">1750</span> €</div>
+                    </div>
+                    <button class="add-product-button">
+                        <img class="add-product-button-img" src="../images/cart3.png" alt="">
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="product-img-container">
+                        <img class="product-img" src="../images/case.png" alt="">
+                    </div>
+
+                    <div class="product-info">
+                        <a href="product-page.html">
+                            <div class="product-heading">HP Pavilion Gaming</div>
+                        </a>
+                        <div class="product-detail">Parfait PC pour le gaming</div>
+                        <div class="stock-remaining"><span class="stock-remaining-quantity">15</span> en stock</div>
+                        <div class="product-price"><span class="price">1750</span> €</div>
+                    </div>
+                    <button class="add-product-button">
+                        <img class="add-product-button-img" src="../images/cart3.png" alt="">
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="product-img-container">
+                        <img class="product-img" src="../images/case.png" alt="">
+                    </div>
+
+                    <div class="product-info">
+                        <a href="product-page.html">
+                            <div class="product-heading">HP Pavilion Gaming</div>
+                        </a>
+                        <div class="product-detail">Parfait PC pour le gaming</div>
+                        <div class="stock-remaining"><span class="stock-remaining-quantity">15</span> en stock</div>
+                        <div class="product-price"><span class="price">1750</span> €</div>
+                    </div>
+                    <button class="add-product-button">
+                        <img class="add-product-button-img" src="../images/cart3.png" alt="">
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="product-img-container">
+                        <img class="product-img" src="../images/case.png" alt="">
+                    </div>
+
+                    <div class="product-info">
+                        <a href="product-page.html">
+                            <div class="product-heading">HP Pavilion Gaming</div>
+                        </a>
+                        <div class="product-detail">Parfait PC pour le gaming</div>
+                        <div class="stock-remaining"><span class="stock-remaining-quantity">15</span> en stock</div>
+                        <div class="product-price"><span class="price">1750</span> €</div>
+                    </div>
+                    <button class="add-product-button">
+                        <img class="add-product-button-img" src="../images/cart3.png" alt="">
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="product-img-container">
+                        <img class="product-img" src="../images/case.png" alt="">
+                    </div>
+
+                    <div class="product-info">
+                        <a href="product-page.html">
+                            <div class="product-heading">HP Pavilion Gaming</div>
+                        </a>
+                        <div class="product-detail">Parfait PC pour le gaming</div>
+                        <div class="stock-remaining"><span class="stock-remaining-quantity">15</span> en stock</div>
+                        <div class="product-price"><span class="price">1750</span> €</div>
+                    </div>
+                    <button class="add-product-button">
+                        <img class="add-product-button-img" src="../images/cart3.png" alt="">
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="product-img-container">
+                        <img class="product-img" src="../images/case.png" alt="">
+                    </div>
+
+                    <div class="product-info">
+                        <a href="product-page.html">
+                            <div class="product-heading">HP Pavilion Gaming</div>
+                        </a>
+                        <div class="product-detail">Parfait PC pour le gaming</div>
+                        <div class="stock-remaining"><span class="stock-remaining-quantity">15</span> en stock</div>
+                        <div class="product-price"><span class="price">1750</span> €</div>
+                    </div>
+                    <button class="add-product-button">
+                        <img class="add-product-button-img" src="../images/cart3.png" alt="">
+                    </button>
+                </div>
+                <div class="product">
+                    <div class="product-img-container">
+                        <img class="product-img" src="../images/case.png" alt="">
+                    </div>
+
+                    <div class="product-info">
+                        <a href="product-page.html">
+                            <div class="product-heading">HP Pavilion Gaming</div>
+                        </a>
+                        <div class="product-detail">Parfait PC pour le gaming</div>
+                        <div class="stock-remaining"><span class="stock-remaining-quantity">15</span> en stock</div>
+                        <div class="product-price"><span class="price">1750</span> €</div>
+                    </div>
+                    <button class="add-product-button">
+                        <img class="add-product-button-img" src="../images/cart3.png" alt="">
+                    </button>
+                </div>
+
+
+            </div>
+            <div class="product-page-numbers bottom-page-numbers">
+                <div class="page-number one active">1</div>
+                <div class="page-number two">2</div>
+                <div class="page-number three">3</div>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <p>© Inforshop.store & site by <span class="footer-created-by">ISL SCRL</span></p>
+    </div>
+</footer>
+<script src="../scripts/main.js"></script>
+</body>
+</html>

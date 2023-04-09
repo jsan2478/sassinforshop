@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InforShop</title>
+    <link rel="stylesheet" href="../../../dist/styles/main.css">
+    <script src="https://kit.fontawesome.com/069baf1ef0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo-box">
+            <a href="../../../index.html"><img src="../images/inforshop.png" alt="" class="logo">
+            </a>        </div>
+        <form class="form-search-box">
+            <label for="search"></label>
+            <input type="search" class="search-input" id="search" name="search" placeholder="Chercher un produit ...">
+            <img src="../images/search2.png" alt="" class="search-icon">
+        </form>
+        <div class="user-and-cart-container">
+            <div class="user-icon-container">
+                <a href="connection.html"><img src="../images/user2.png" alt="User Icon" class="user-icon"></a>
+            </div>
+            <a href="cart.html">
+            <div class="cart-icon-container">
+                <img src="../images/cart2.png" alt="Cart Icon" class="cart-icon">
+                <div class="cart-count-container">
+                    <span class="cart-count">0</span>
+                </div>
+
+            </div>
+            </a>
+        </div>
+    </div>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="../../../index.html">Accueil</a></li>
+            <li><a href="products.html">Produits</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger-container active">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </div>
+    <div class="x-button-container">
+        <span class="x-button-line x-button-first-line"></span>
+        <span class="x-button-line x-button-second-line"></span>
+    </div>
+</header>
+<main class="main">
+    <div class="sub-nav">
+        <a href="../../../index.html"> <img src="../images/home.png" alt="Home icon" class="home-icon"></a>
+        <i class="fa-solid fa-angle-right sub-nav-arrow"></i>
+        <a href="inscription.html" class="navigation-button inscription">Inscription</a>
+    </div>
+    <form action="/submit-form" method="post" class="inscription-form">
+        <h2 class="inscription-form-heading">Inscription</h2>
+        <label class="inscription-form-label" >Email*
+            <input class="inscription-form-input" type="email" id="l" name="email" required>
+        </label>
+        <label class="inscription-form-label" >Mot de passe*
+            <input class="inscription-form-input" type="password" name="password" required>
+        </label>
+        <label class="inscription-form-label">Prénom*
+            <input class="inscription-form-input" type="text" name="name" required>
+        </label>
+        <label class="inscription-form-label">Nom*
+            <input class="inscription-form-input" type="text" name="surname" required>
+        </label>
+        <label class="inscription-form-label" >Date de naissance*
+            <input class="inscription-form-input" type="number" name="birth-year" required>
+        </label>
+        <label class="inscription-form-label inscription-form-label-conditions">
+            <input class="inscription-form-checkbox" type="checkbox" name="conditions" required><span class="inscription-form-checkbox-text"> J'ai lu et j'accepte les <span class="inscription-form-checkbox-span">CGV</span> ...*</span>
+        </label>
+
+
+        <button class="inscription-form-submit-btn connection-form-connection-btn btn-gray" type="submit"><i class="fa-solid fa-check connection-button-check-icon"></i>Inscription</button>
+
+
+    </form>
+
+</main>
+<footer class="footer">
+    <div class="footer-container">
+        <p>© Inforshop.store & site by <span class="footer-created-by">ISL SCRL</span></p>
+    </div>
+</footer>
+<script src="../scripts/main.js"></script>
+</body>
+</html>

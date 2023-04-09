@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InforShop</title>
+    <link rel="stylesheet" href="../../../dist/styles/main.css">
+    <script src="https://kit.fontawesome.com/069baf1ef0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo-box">
+            <a href="../../../index.html"><img src="../images/inforshop.png" alt="" class="logo">
+            </a>
+        </div>
+        <form class="form-search-box">
+            <label for="search"></label>
+            <input type="search" class="search-input" id="search" name="search" placeholder="Chercher un produit ...">
+            <img src="../images/search2.png" alt="" class="search-icon">
+        </form>
+        <div class="user-and-cart-container">
+            <div class="user-icon-container">
+                <a href="connection.html"><img src="../images/user2.png" alt="User Icon" class="user-icon"></a>
+            </div>
+            <div class="cart-icon-container">
+                <a href="cart.html"><img src="../images/cart2.png" alt="Cart Icon" class="cart-icon">
+                    <div class="cart-count-container">
+                        <span class="cart-count">0</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar" >
+        <ul class="nav-links">
+            <li><a href="../../../index.html">Accueil</a></li>
+            <li><a href="products.html">Produits</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger-container active">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </div>
+    <div class="x-button-container">
+        <span class="x-button-line x-button-first-line"></span>
+        <span class="x-button-line x-button-second-line"></span>
+    </div>
+</header>
+
+<div class="sub-nav">
+    <a href="../../../index.html"> <img src="../images/home.png" alt="Home icon" class="home-icon"></a>
+    <i class="fa-solid fa-angle-right sub-nav-arrow" ></i>
+    <a href="order.html" class="navigation-button connection">Command</a>
+</div>
+<div class="main-container">
+
+
+<main class="order-page-main">
+    <h2 class="order-form-heading">Command</h2>
+
+    <form class="order-form">
+        <h3 class="order-form-sub-heading">Adresse de livrasion*</h3>
+        <label for="street">Rue* <br>
+        <input type="text" id="street" name="street" placeholder="Rue" required>
+            <i class="fa-solid fa-house address-icon"></i>
+        </label>
+        <label for="house-number">Numéro de maison*<br>
+        <input type="text" id="house-number" name="house-number" placeholder="Numéro de maison" required>
+            <i class="fa-solid fa-tag address-icon"></i>
+        </label>
+        <label for="city">Localité*<br>
+        <input type="text" id="city" name="locality" placeholder="Localité" required>
+            <i class="fa-solid fa-city address-icon"></i>
+        </label>
+
+
+        <label for="zip">Code Postal*<br>
+        <input type="text" id="zip" name="zip" placeholder="Code Postal" required>
+            <i class="fa-solid fa-city address-icon"></i>
+        </label>
+        <label for="countries-for-billing">Pays*<br>
+        <input list="countries-list-order" name="country" class="country" id="countries-for-billing" placeholder="Pays">
+        <datalist id="countries-list-order">
+            <option value="Belgique">
+            <option value="Allemagne">
+            <option value="France">
+            <option value="Grand Britagne">
+            <option value="Etats Unis">
+                <!-- Add more options for other countries -->
+        </datalist>
+        </label>
+
+
+    </form>
+    <form class="order-form">
+        <h3 class="order-form-sub-heading">Adresse de facturation</h3>
+        <label for="street">Rue* <br>
+            <input type="text" class="street" name="street" placeholder="Rue" required>
+            <i class="fa-solid fa-house address-icon"></i>
+        </label>
+        <label for="house-number">Numéro de maison*<br>
+            <input type="text" class="house-number" name="house-number" placeholder="Numéro de maison" required>
+            <i class="fa-solid fa-tag address-icon"></i>
+
+        </label>
+        <label for="city">Localité*<br>
+            <input type="text" class="city" name="locality" placeholder="Localité" required>
+            <i class="fa-solid fa-city address-icon"></i>
+
+        </label>
+
+
+        <label for="zip">Code Postal*<br>
+            <input type="text" class="zip" name="zip" placeholder="Code Postal" required>
+            <i class="fa-solid fa-city address-icon"></i>
+
+        </label>
+        <label for="countries-for-delivery">Pays*<br>
+            <input list="countries-list-delivery" name="country" id="countries-for-delivery" class="country" placeholder="Pays">
+            <datalist id="countries-list-delivery">
+                <option value="Belgique">
+                <option value="Allemagne">
+                <option value="France">
+                <option value="Grand Britagne">
+                <option value="Etats Unis">
+                    <!-- Add more options for other countries -->
+            </datalist>
+        </label>
+
+
+    </form>
+    <form class="order-form payment-form">
+        <h3 class="order-form-sub-heading">Moyen de paiement</h3>
+        <form action="">
+            <label for="payment-method">Moyen de paiement <br>
+            <select name="payment-method" id="payment-method">
+                <option value="credit-card">Credit Card</option>
+                <option value="visa">Visa</option>
+                <option value="maestro">Maestro</option>
+            </select>
+            </label>
+        </form>
+        <button class="order-submit-btn" type="submit"><i class="fa-solid fa-floppy-disk"></i>Valider</button>
+
+
+    </form>
+</main>
+</div>
+    <footer class="footer">
+    <div class="footer-container">
+        <p>© Inforshop.store & site by <span class="footer-created-by">ISL SCRL</span></p>
+    </div>
+</footer>
+<script src="../scripts/main.js"></script>
+</body>
+</html>

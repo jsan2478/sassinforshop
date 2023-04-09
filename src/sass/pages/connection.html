@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InforShop</title>
+    <link rel="stylesheet" href="../../../dist/styles/main.css">
+    <script src="https://kit.fontawesome.com/069baf1ef0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo-box">
+            <a href="../../../index.html"><img src="../images/inforshop.png" alt="" class="logo">
+            </a>        </div>
+        <form class="form-search-box">
+            <label for="search"></label>
+            <input type="search" class="search-input" id="search" name="search" placeholder="Chercher un produit ...">
+            <img src="../images/search2.png" alt="" class="search-icon">
+        </form>
+        <div class="user-and-cart-container">
+            <div class="user-icon-container">
+                <a href="connection.html"><img src="../images/user2.png" alt="User Icon" class="user-icon"></a>
+            </div>
+            <div class="cart-icon-container">
+                <a href="cart.html"><img src="../images/cart2.png" alt="Cart Icon" class="cart-icon"></a>
+                <div class="cart-count-container">
+                    <span class="cart-count">0</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <nav class="navbar" >
+        <ul class="nav-links">
+            <li><a href="../../../index.html">Accueil</a></li>
+            <li><a href="products.html">Produits</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger-container active">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </div>
+    <div class="x-button-container">
+        <span class="x-button-line x-button-first-line"></span>
+        <span class="x-button-line x-button-second-line"></span>
+    </div>
+</header>
+<main class="main">
+    <div class="sub-nav">
+        <a href="../../../index.html"> <img src="../images/home.png" alt="Home icon" class="home-icon"></a>
+        <i class="fa-solid fa-angle-right sub-nav-arrow" ></i>
+        <a href="connection.html" class="navigation-button connection">Connexion</a>
+    </div>
+    <form action="#" class="connection-form">
+        <h2 class="connection-form-heading">Connexion</h2>
+        <div>
+            <label for="email"></label>
+            <input class="connection-form-input" placeholder="Email" type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password"></label>
+            <input class="connection-form-input" placeholder="Password" type="password" id="password" name="password" required>
+        </div>
+        <button class="btn-gray connection-form-connection-btn" type="submit"><i class="fa-solid fa-check connection-button-check-icon"></i>Connexion</button>
+        <div class="inscription-connect-with-google-container">
+            <a href="inscription.html" class="connection-form-inscription-btn">Inscription</a>
+            <button class="connection-with-google-button"><img src="../images/google.png" class="google-icon" alt=""> Connexion Google</button>
+        </div>
+    </form>
+</main>
+<footer class="footer">
+    <div class="footer-container">
+        <p>© Inforshop.store & site by <span class="footer-created-by">ISL SCRL</span></p>
+    </div>
+</footer>
+<script src="../scripts/main.js"></script>
+</body>
+</html>

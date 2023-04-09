@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InforShop</title>
+    <link rel="stylesheet" href="../../../dist/styles/main.css">
+    <script src="https://kit.fontawesome.com/069baf1ef0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo-box">
+            <a href="../../../index.html"><img src="../images/inforshop.png" alt="" class="logo">
+            </a>
+        </div>
+        <form class="form-search-box">
+            <label for="search"></label>
+            <input type="search" class="search-input" id="search" name="search" placeholder="Chercher un produit ...">
+            <img src="../images/search2.png" alt="" class="search-icon">
+        </form>
+        <div class="user-and-cart-container">
+            <div class="user-icon-container">
+                <a href="connection.html"><img src="../images/user2.png" alt="User Icon" class="user-icon"></a>
+            </div>
+            <div class="cart-icon-container">
+                <a href="cart.html"><img src="../images/cart2.png" alt="Cart Icon" class="cart-icon">
+                    <div class="cart-count-container">
+                        <span class="cart-count">0</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="../../../index.html">Accueil</a></li>
+            <li><a href="products.html">Produits</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger-container active">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </div>
+    <div class="x-button-container">
+        <span class="x-button-line x-button-first-line"></span>
+        <span class="x-button-line x-button-second-line"></span>
+    </div>
+</header>
+
+<div class="sub-nav">
+    <a href="../../../index.html"> <img src="../images/home.png" alt="Home icon" class="home-icon"></a>
+    <i class="fa-solid fa-angle-right sub-nav-arrow"></i>
+    <a href="connection.html" class="navigation-button contact">Contact</a>
+</div>
+<main class="main">
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10120.256013556682!2d5.553828685065177!3d50.64450247203927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0fa17bcbba457%3A0x10a5d8421ff572ce!2sSaint-Laurent%2C%204000%20Li%C3%A8ge!5e0!3m2!1sen!2sbe!4v1679594201937!5m2!1sen!2sbe"
+                class="map" width="1100" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="contact-page-main-container">
+
+        <form class="contact-form">
+            <h3 class="contact-form-heading">Contact Us</h3>
+            <label for="name"><i class="fa-solid fa-user contact-form-icon"></i>Votre prénom & Nom* <br>
+                <input type="text" id="name" name="name" placeholder="Votre prénom & Nom" required>
+            </label>
+            <label for="email"><i class="fa-regular fa-envelope contact-form-icon"></i>Votre email (pour vous répondre)*<br>
+                <input type="email" id="email" name="house-number" placeholder="Votre email (pour vous répondre)"
+                       required>
+            </label>
+            <label for="telephone"><i class="fa-solid fa-phone-flip contact-form-icon"></i>Votre téléphone*<br>
+
+                <input type="tel" id="telephone" name="telephone" placeholder="Votre téléphone" required>
+            </label>
+
+
+            <label for="subject"><i class="fa-regular fa-comment contact-form-icon"></i>De quoi souhaitez-vous
+                parler?*<br>
+
+                <input type="text" id="subject" name="subject" placeholder="De quoi souhaitez-vous parler?*" required>
+            </label>
+            <label for="detail"><i class="fa-regular fa-comment contact-form-icon"></i>Expliquez-moi en détail... *<br>
+
+                <input type="text" id="detail" name="detail" placeholder="Expliquez-moi en détail...*" required>
+            </label>
+            <button type="submit" class="contact-form-submit-btn">Envoyer</button>
+
+        </form>
+        <div class="contact-info">
+            <div class="contact-info-heading">Information de Contact <br><span class="contact-info-sub-heading">Inforshop SRL</span>
+            </div>
+            <address>
+                <h2>Adresse</h2>
+                <p>Rue Saint-Laurent 33</p>
+                <p>4000 Liège</p>
+            </address>
+            <div class="telephone-number-container">
+                <h2>Téléphone</h2>
+                <a href="tel:+32(0)4 365 21 45">+32(0)4 365 21 45</a>
+            </div>
+            <div class="working-hours">
+                <h2>Horaire</h2>
+                <p>
+                    <span class="contact-info-working-hours"> Notre équipe se tient à votre disposition lundi au vendredi : </span> <br>
+                    De : 9h00 à 18h00
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer-container">
+        <p>© Inforshop.store & site by <span class="footer-created-by">ISL SCRL</span></p>
+    </div>
+</footer>
+<script src="../scripts/main.js"></script>
+</body>
+</html>
