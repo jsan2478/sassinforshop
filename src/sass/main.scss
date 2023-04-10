@@ -1,23 +1,21 @@
-:root {
-  --max-width: 1140px;
-  --dark-blue: #254492;
-  --contact-form-dark-blue: #2b74bb;
-  --contact-form-light-blue: #a5c4e2;
-  --darker-blue: #263585;
-  --light-blue: #216eb8;
-  --orange: rgba(227, 136, 63, 0.91);
-  --white: #fff;
-  --lighter-blue: #4d8bc6;
-  --sky-blue: #a8aece;
-  --placeholder-color: #747474;
-  --gray-btn-color: #e9e9ed;
-  --dark-gray-btn-color: #9494a0;
-  --light-blue-btn-color: #54b6eb;
-  --light-gray-color: #dae0f1;
-  --orange-product-color: rgba(213, 125, 58, 0.93);
-  --dark-blue-product-color: #386cb2;
-  --black: black;
-  --contact-form-text-black: #424242; }
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "pages/home";
+
+
+
+
+
 
 * {
   margin: 0;
@@ -35,13 +33,13 @@ body {
   margin-bottom: 0; }
 
 .header {
-  background: linear-gradient(to left, var(--dark-blue), var(--light-blue));
+  background: linear-gradient(to left, $dark-blue, $light-blue);
   padding: 0 20px 15px 20px;
   & > .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: var(--max-width);
+    max-width: $max-width;
     margin: 0 auto;
     align-items: flex-start;
     gap: 30px;
@@ -51,7 +49,7 @@ body {
 .logo {
   height: 70px;
   &-box {
-    background-color: #fff;
+    background-color: $white;
     border-radius: 0 0 15px 15px; }
 }
 
@@ -71,13 +69,13 @@ body {
 
 .cart-count {
   font-size: 1.4rem;
-  color: #fff;
+  color: $white;
   padding: 0 6px;
   &-container {
     position: absolute;
     right: -5px;
     top: -10px;
-    background-color: var(--orange);
+    background-color: $orange;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -91,7 +89,7 @@ body {
     position: absolute;
     top: 35px;
     left: 0;
-    color: #fff;
+    color: $white;
     font-size: 1.6rem;
     z-index: 1; }
 }
@@ -118,7 +116,7 @@ input[type="search"] {
 .form-search-box {
   width: 100%;
   position: relative;
-  background-color: #fff;
+  background-color: $white;
   order: 3; }
 
 .search-input {
@@ -130,7 +128,7 @@ input[type="search"] {
     outline: none; }
   &::placeholder {
     padding-left: 8px;
-    color: var(--placeholder-color); }
+    color: $placeholder-color; }
 }
 
 .search-icon {
@@ -154,7 +152,7 @@ input[type="search"] {
   &-line {
     width: 100%;
     height: 3px;
-    background: var(--orange);
+    background: $orange;
     border-radius: 3px; } }
 
 
@@ -172,7 +170,7 @@ input[type="search"] {
     z-index: 17; }
   &-line {
     height: 31px;
-    background-color: var(--white);
+    background-color: $white;
     width: 2px;
     border-radius: 5px;
     position: absolute;
@@ -194,9 +192,9 @@ input[type="search"] {
     display: none;
   &.open {
     display: block;
-    max-width: var(--max-width);
+    max-width: $max-width;
     width: 100vw;
-    background: linear-gradient(to bottom, var(--dark-blue), var(--light-blue));
+    background: linear-gradient(to bottom, $dark-blue, $light-blue);
     height: 150vh;
     position: absolute;
     top: 0;
@@ -225,13 +223,13 @@ input[type="search"] {
   margin-top: 100px;
   z-index: 4;
   & li a {
-    color: #fff;
+    color: $white;
     text-decoration: none; }}
 
 
 
 .main {
-  max-width: var(--max-width);
+  max-width: $max-width;
   margin: 0 auto;
   padding: 0 20px 50px 20px; }
 
@@ -243,11 +241,11 @@ input[type="search"] {
   flex-wrap: wrap;
   align-items: center;
   margin: 20px 0 50px 0;
-  max-width: var(--max-width);
+  max-width: $max-width;
   padding-left: 20px;
   padding-right: 20px;
   &-arrow {
-    color: var(--orange);
+    color: $orange;
     font-size: 1rem;
     font-weight: bold;
     margin-top: auto;
@@ -258,14 +256,14 @@ input[type="search"] {
   box-sizing: content-box;
   width: 14px;
   padding: 8px 12px;
-  background-color: var(--white);
+  background-color: $white;
   display: block; }
 
 
 .navigation-button {
   padding: 0 14px;
   border: none;
-  background-color: var(--white);
+  background-color: $white;
   color: #686868;
   font-size: 1.25rem;
   text-decoration: none;
@@ -275,7 +273,7 @@ input[type="search"] {
 
 .products-page {
   &-heading {
-    color: var(--light-blue);
+    color: $light-blue;
     font-size: 1.7rem;
     margin-top: 20px; }
   &-main {
@@ -283,7 +281,7 @@ input[type="search"] {
     flex-direction: column;
     align-items: flex-start; }
   &-aside {
-    background-color: var(--white);
+    background-color: $white;
     margin: 0 auto;
     width: 100%;
     max-width: 450px;
@@ -304,7 +302,7 @@ input[type="search"] {
     margin-top: 30px; }
   & input {
     border: none;
-    border-bottom: 1px solid var(--light-blue);
+    border-bottom: 1px solid $light-blue;
     width: 100%;
     &:focus {
       outline: none; }}}
@@ -323,7 +321,7 @@ input[type="search"] {
 .slider {
   position: relative;
   height: 7px;
-  background-color: var(--light-gray-color);
+  background-color: $light-gray-color;
   margin-top: 50px; }
 
 .progress {
@@ -332,7 +330,7 @@ input[type="search"] {
   position: absolute;
   left: 0;
   right: 0;
-  background-color: var(--light-blue-btn-color); }
+  background-color: $light-blue-btn-color; }
 
 .range-input {
   position: relative;
@@ -355,11 +353,11 @@ input[type="range"] {
     width: 10px;
     border-radius: 50%;
     /*background: #17A2B8;*/
-    background-color: #fff;
+    background-color: $white;
     pointer-events: auto;
     -webkit-appearance: none;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-    border: 14px solid var(--light-blue-btn-color);
+    border: 14px solid $light-blue-btn-color;
     box-sizing: content-box; }
   &::-moz-range-thumb {
     height: 17px;
@@ -392,12 +390,12 @@ input[type="range"] {
 
 .page-number {
   padding: 0 10px;
-  border: 1px solid var(--dark-blue);
-  color: var(--dark-blue);
+  border: 1px solid $dark-blue;
+  color: $dark-blue;
   font-size: 1.7rem;
-  background-color: var(--white);
+  background-color: $white;
   &.active {
-    border: 1px solid var(--orange-product-color); }}
+    border: 1px solid $orange-product-color; }}
 
 
 
@@ -422,7 +420,7 @@ input[type="range"] {
 .product {
   width: 100%;
   max-width: 450px;
-  background-color: var(--white);
+  background-color: $white;
   position: relative;
   padding: 20px;
   margin-bottom: 20px;
@@ -440,11 +438,11 @@ input[type="range"] {
     align-items: flex-start;
     font-size: 2rem;}
   &-heading {
-    color: var(--dark-blue-product-color);
+    color: $dark-blue-product-color;
     font-size: 2.5rem;
     text-decoration: underline;
   &-price {
-    color: var(--orange-product-color);
+    color: $orange-product-color;
     font-weight: bold;
     font-size: 2rem; }}
 }
@@ -456,7 +454,7 @@ input[type="range"] {
 
 
 .add-product-button {
-  background-color: var(--dark-blue);
+  background-color: $dark-blue;
   padding: 8px 25px 6px 15px;
   border-radius: 3px;
   border: none;
@@ -475,13 +473,13 @@ input[type="range"] {
 .product-description {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: var(--white);
+    background-color: $white;
     margin-top: 20px;
     padding: 20px;
     gap: 20px;
   &-heading {
     grid-column: 1/-1;
-    color: var(--light-blue);
+    color: $light-blue;
     font-weight: normal;
     font-size: 2.4rem; }
   &-img {
@@ -497,7 +495,7 @@ input[type="range"] {
 
 .product-info {
    &-heading {
-      color: var(--light-blue);
+      color: $light-blue;
       font-weight: normal;
       font-size: 2rem; }
    &-detail {
@@ -509,8 +507,8 @@ input[type="range"] {
       flex-direction: column;
       align-items: flex-start; }
     &-add-button {
-      background-color: var(--dark-blue);
-      color: var(--white);
+      background-color: $dark-blue;
+      color: $white;
       padding: 0 25px;
       border: none;
       border-radius: 5px;
@@ -536,7 +534,7 @@ input[type="range"] {
 
 .product-quantity {
   border: none;
-  border-bottom: 1px solid var(--light-blue-btn-color);
+  border-bottom: 1px solid $light-blue-btn-color;
   &:focus {
     outline: none; }}
 
@@ -556,28 +554,28 @@ input[type="range"] {
 /*CONNECTION PAGE - START*/
 
 .connection-form {
-  background-color: var(--white);
+  background-color: $white;
   padding: 40px 20px 15px 20px;
   margin-top: 20px;
   &-heading {
     font-size: 1.7rem;
-    color: var(--light-blue);
+    color: $light-blue;
     padding-bottom: 20px; }
   &-input {
     border: none;
-    border-bottom: 1px solid var(--lighter-blue);
+    border-bottom: 1px solid $lighter-blue;
     width: 100%;
     padding: 15px 5px 5px 10px;
     &::placeholder {
-      color: var(--placeholder-color);
+      color: $placeholder-color;
       font-size: 1rem;}
     &:focus {
       outline: none; }}
   &-connection-btn {
     padding: 8px 15px;
-    background-color: var(--sky-blue);
+    background-color: $sky-blue;
     border: none;
-    color: var(--white);
+    color: $white;
     border-radius: 4px;
     font-size: 1.1rem;
     max-width: 120px;
@@ -585,8 +583,8 @@ input[type="range"] {
     margin-bottom: 30px; }
   &-inscription-btn {
     display: block;
-    background-color: var(--darker-blue);
-    color: var(--white);
+    background-color: $darker-blue;
+    color: $white;
     border: none;
     font-size: 1.3rem;
     padding: 8px 15px;
@@ -602,8 +600,8 @@ input[type="range"] {
 
 .connection-with-google-button {
   display: block;
-  color: var(--darker-blue);
-  border: 1px solid var(--darker-blue);
+  color: $darker-blue;
+  border: 1px solid $darker-blue;
   border-radius: 3px;
   padding: 6px 14px; }
 
@@ -615,12 +613,12 @@ input[type="range"] {
 /*CONNECTION PAGE - END*/
 /*FOOTER - START*/
 .footer {
-  background: linear-gradient(to right, var(--dark-blue), var(--light-blue));
+  background: linear-gradient(to right, $dark-blue, $light-blue);
   &-container {
     text-align: center;
     padding: 30px 0;
-    color: var(--white);
-    max-width: var(--max-width);
+    color: $white;
+    max-width: $max-width;
     min-height: 200px; }
   &-created-by {
     text-decoration: underline; }}
@@ -636,8 +634,8 @@ input[type="range"] {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(7, 1fr);
-  background-color: var(--white);
-  color: var(--light-blue);
+  background-color: $white;
+  color: $light-blue;
   margin-top: 50px;
   padding: 30px 20px 60px 20px;
   gap: 20px;
@@ -648,7 +646,7 @@ input[type="range"] {
   &-input {
     /*grid-column: 1/-1;*/
     border: none;
-    border-bottom: 1px solid var(--light-blue);
+    border-bottom: 1px solid $light-blue;
     width: 100%;
     &:focus {
       outline: none; }}
@@ -670,7 +668,7 @@ input[type="range"] {
 
 .cart-page {
   &-main {
-    background-color: var(--white);
+    background-color: $white;
     padding: 20px;
     margin-top: 20px; }
   &-table {
@@ -691,15 +689,12 @@ table td {
   position: relative; }
 
 table tbody tr:first-child td {
-  border-bottom: 1px solid var(--light-blue); }
+  border-bottom: 1px solid $light-blue; }
 
 table td::before {
   content: attr(data-label);
   position: absolute;
   left: 0; }
-
-
-
 
 
 
@@ -710,8 +705,8 @@ table td::before {
   margin-top: 20px;
   border: none;
   border-radius: 7px;
-  color: var(--white);
-  background-color: var(--darker-blue);
+  color: $white;
+  background-color: $darker-blue;
   font-size: 1.6rem;
   cursor: pointer;
   transition: all ease-out .3s;
@@ -745,9 +740,9 @@ table td::before {
 /*------------*/
 
 .order-page-main {
-  background-color: var(--white);
+  background-color: $white;
   padding: 20px 20px 40px 20px;
-  max-width: var(--max-width);
+  max-width: $max-width;
   margin: 0 20px 50px; }
 
 
@@ -761,7 +756,7 @@ table td::before {
 #payment-method {
   width: 15%;
   min-width: 100px;
-  background-color: var(--gray-btn-color);
+  background-color: $gray-btn-color;
   border: 1px solid #8f8f9d;
   border-radius: 3px;
   padding: 4px 0;
@@ -771,8 +766,8 @@ table td::before {
   height: 40px;
   padding: 0 25px;
   margin-top: 15px;
-  color: var(--white);
-  background-color: var(--sky-blue);
+  color: $white;
+  background-color: $sky-blue;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -791,7 +786,7 @@ table td::before {
   margin-top: 30px;
   & input {
     border: none;
-    border-bottom: 1px solid var(--lighter-blue);
+    border-bottom: 1px solid $lighter-blue;
     width: 100%;
     margin-bottom: 20px;
     padding-left: 8px;
@@ -800,16 +795,16 @@ table td::before {
     &:focus {
       outline: none; }}
   & label {
-    color: var(--light-blue);
+    color: $light-blue;
     font-weight: bold;
     margin-bottom: 0;
     position: relative; /*++++++++++++*/
     right: 10px;
     bottom: 30px;}
   &-heading {
-    color: var(--light-blue); }
+    color: $light-blue; }
   &-sub-heading {
-    color: var(--light-blue);
+    color: $light-blue;
     grid-column: 1/-1; }
 }
 
@@ -820,7 +815,7 @@ table td::before {
 
 .country {
   border-radius: 3px;
-  background-color: var(--gray-btn-color);
+  background-color: $gray-btn-color;
   padding: 4px 0;
   &::placeholder {
     padding-left: 8px; }}
@@ -849,7 +844,7 @@ table td::before {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   gap: 20px;
-  background-color: var(--white);
+  background-color: $white;
   padding: 50px 20px; }
 
 .contact-form {
@@ -859,7 +854,7 @@ table td::before {
   & input {
     width: 95%;
     border: none;
-    border-bottom: 1px solid var(--light-blue-btn-color);
+    border-bottom: 1px solid $light-blue-btn-color;
     margin-bottom: 20px;
     padding-bottom: 5px;
     &:focus {
@@ -871,8 +866,8 @@ table td::before {
     height: 35px;
     max-width: 100px;
     padding: 0 15px;
-    background-color: var(--contact-form-dark-blue);
-    color: var(--white);
+    background-color: $contact-form-dark-blue;
+    color: $white;
     border-radius: 3px;
     border: none;
     font-size: 1.2rem;
@@ -880,14 +875,14 @@ table td::before {
   &-icon {
     margin-right: 8px;
     font-size: 1.5rem;
-    color: var(--contact-form-light-blue); }
+    color: $contact-form-light-blue; }
   & label {
-    color: var(--contact-form-dark-blue);
+    color: $contact-form-dark-blue;
     font-weight: bold;
     font-size: 1.9rem; }
   &-heading {
     margin-bottom: 20px;
-    color: var(--contact-form-dark-blue);
+    color: $contact-form-dark-blue;
     font-weight: normal;
     font-size: 2.7rem; }
 }
@@ -901,38 +896,30 @@ table td::before {
   padding: 50px 20px 50px 0;
   gap: 15px;
   &-heading {
-    color: var(--contact-form-dark-blue);
+    color: $contact-form-dark-blue;
     font-size: 2.7rem; }
   &-sub-heading {
-    color: var(--black);
+    color: $black;
     font-size: 1.7rem;
     display: block;
     font-weight: bold; }
   & h2 {
-    color: var(--contact-form-dark-blue);
+    color: $contact-form-dark-blue;
     font-size: 2.4rem;
     font-style: normal;
     font-weight: normal; }
   &-working-hours {
     font-weight: bold; }
   & a {
-    color: var(--contact-form-text-black);
+    color: $contact-form-text-black;
     font-size: 1.7rem;
     font-style: normal;
     text-decoration: none; }
   & p {
-    color: var(--contact-form-text-black);
+    color: $contact-form-text-black;
     font-size: 1.7rem;
     font-style: normal;
     text-decoration: none; }}
-
-
-
-
-
-
-
-
 
 
 
@@ -945,7 +932,7 @@ table td::before {
     align-items: center; }
   .navbar {
     display: block;
-    max-width: var(--max-width);
+    max-width: $max-width;
     margin: 0 auto;
     padding: 40px 0 0 10px;
     position: relative;
@@ -1025,7 +1012,7 @@ table td::before {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    background-color: var(--white);
+    background-color: $white;
     margin-top: 20px;
     padding: 20px; }
   .product-info-sub-container {
@@ -1066,8 +1053,8 @@ table td::before {
   table tr:nth-child(1) td {
     padding-top: 15px;
     padding-bottom: 15px;
-    border-top: 1px solid var(--light-blue);
-    border-bottom: 1px solid var(--light-blue); }
+    border-top: 1px solid $light-blue;
+    border-bottom: 1px solid $light-blue; }
   /*CART PAGE - END*/
   /*FOOTER - START*/
   .footer-container {
