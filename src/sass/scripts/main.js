@@ -1,7 +1,7 @@
 
 
-const hamburgerButton = document.querySelector(".hamburger-container");
-const closeButton = document.querySelector(".x-button-container");
+const hamburgerButton = document.querySelector(".hamburger");
+const closeButton = document.querySelector(".x-button");
 const menu = document.querySelector(".navbar");
 const incrementBtnMin = document.querySelector((".fa-angle-up-min"));
 const decrementBtnMin = document.querySelector((".fa-angle-down-min"));

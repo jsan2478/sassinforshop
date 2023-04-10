@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass src/sass/styles/main.scss dist/styles/main.css -w"
+    "compile:sass": "node-sass src/sass/main.scss dist/styles/main.css -w"
 
   },
   "author": "JanSan",
