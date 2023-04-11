@@ -3,228 +3,19 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-
-
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
 
-@import "pages/home";
+@import "layout/header";
+@import "layout/footer";
 
 
+@import "components/button";
 
+@import "pages/home"; /* <<<<-----------------<<< */
 
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  font-size: 1.6rem;
-  line-height: 1.7;
-  color: #777;
-  background-color: #e4e4e4;
-  margin-bottom: 0; }
-
-.header {
-  background: linear-gradient(to left, $dark-blue, $light-blue);
-  padding: 0 20px 15px 20px;
-  & > .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: $max-width;
-    margin: 0 auto;
-    align-items: flex-start;
-    gap: 30px;
-  }
-}
-
-.logo {
-  height: 70px;
-  &-box {
-    background-color: $white;
-    border-radius: 0 0 15px 15px; }
-}
-
-.user-and-cart-container {
-  display: flex;
-  width: 100px;
-  justify-content: space-between;
-  align-items: center;
-  gap: 25px;
-  margin-bottom: 18px; }
-
-.user-icon, .cart-icon {
-  max-height: 40px;
-  height: 100%; }
-
-
-
-.cart-count {
-  font-size: 1.4rem;
-  color: $white;
-  padding: 0 6px;
-  &-container {
-    position: absolute;
-    right: -5px;
-    top: -10px;
-    background-color: $orange;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-}
-
-[class$="icon-container"] {
-  max-height: 40px;
-  position: relative;
-  &::before {
-    position: absolute;
-    top: 35px;
-    left: 0;
-    color: $white;
-    font-size: 1.6rem;
-    z-index: 1; }
-}
-
-.user-icon-container::before {
-  content: "Compte"; }
-
-.cart-icon-container::before {
-  content: "Panier"; }
-
-/*REMOVING SECOND DEFAULT SEARCH ICON - START*/
-
-
-input[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: transparent;
-  &::-webkit-search-cancel-button {
-    -webkit-appearance: none; }
-}
-
-/*REMOVING SECOND DEFAULT SEARCH ICON -END*/
-.form-search-box {
-  width: 100%;
-  position: relative;
-  background-color: $white;
-  order: 3; }
-
-.search-input {
-  width: 100%;
-  height: 100%;
-  border: none;
-  padding: 7px;
-  &:focus {
-    outline: none; }
-  &::placeholder {
-    padding-left: 8px;
-    color: $placeholder-color; }
-}
-
-.search-icon {
-  position: absolute;
-  right: 4px;
-  top: 10%;
-  height: 24px;
-  padding-bottom: 3px; }
-
-.hamburger {
-  &.active {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 31px;
-    height: 20px;
-    position: absolute;
-    top: 20px;
-    right: 20px;}
-  &-line {
-    width: 100%;
-    height: 3px;
-    background: $orange;
-    border-radius: 3px; } }
-
-
-.x-button {
-    display: none;
-  &.active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 31px;
-    height: 31px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 17; }
-  &-line {
-    height: 31px;
-    background-color: $white;
-    width: 2px;
-    border-radius: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    &-first {
-      transform: rotate(45deg);
-      top: 0; }
-    &-second {
-      transform: rotate(-45deg);
-      top: 0; }
-  }
-}
-
-
-
-.navbar {
-    display: none;
-  &.open {
-    display: block;
-    max-width: $max-width;
-    width: 100vw;
-    background: linear-gradient(to bottom, $dark-blue, $light-blue);
-    height: 150vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 7;
-    animation: moveInTop ease-out .3s;
-    margin: 0 auto; }}
-
-
-
-@keyframes moveInTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-150px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
-
-
-.nav-links {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  list-style: none;
-  font-size: 1.5rem;
-  margin-top: 100px;
-  z-index: 4;
-  & li a {
-    color: $white;
-    text-decoration: none; }}
 
 
 
@@ -611,20 +402,7 @@ input[type="range"] {
   height: 15px; }
 
 /*CONNECTION PAGE - END*/
-/*FOOTER - START*/
-.footer {
-  background: linear-gradient(to right, $dark-blue, $light-blue);
-  &-container {
-    text-align: center;
-    padding: 30px 0;
-    color: $white;
-    max-width: $max-width;
-    min-height: 200px; }
-  &-created-by {
-    text-decoration: underline; }}
 
-
-/*FOOTER - END*/
 
 
 /*INSCRIPTION PAGE - START*/
@@ -919,7 +697,7 @@ table td::before {
     color: $contact-form-text-black;
     font-size: 1.7rem;
     font-style: normal;
-    text-decoration: none; }}
+    text-decoration: none;}}
 
 
 

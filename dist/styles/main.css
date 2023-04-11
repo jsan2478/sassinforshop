@@ -1,7 +1,15 @@
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: inherit; }
 
 html {
   font-size: 62.5%; }
@@ -11,7 +19,8 @@ body {
   line-height: 1.7;
   color: #777;
   background-color: #e4e4e4;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  box-sizing: border-box; }
 
 .header {
   background: linear-gradient(to left, #254492, #216eb8);
@@ -108,6 +117,46 @@ input[type="search"] {
   height: 24px;
   padding-bottom: 3px; }
 
+.navbar {
+  display: none; }
+  .navbar.open {
+    display: block;
+    max-width: 1140px;
+    width: 100vw;
+    background: linear-gradient(to bottom, #254492, #216eb8);
+    height: 150vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    animation: moveInTop ease-out .3s;
+    margin: 0 auto; }
+
+.nav-links {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+  font-size: 1.5rem;
+  margin-top: 100px;
+  z-index: 4; }
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none; }
+
+/*FOOTER - START*/
+.footer {
+  background: linear-gradient(to right, #254492, #216eb8); }
+  .footer-container {
+    text-align: center;
+    padding: 30px 0;
+    color: #fff;
+    max-width: 1140px;
+    min-height: 200px; }
+  .footer-created-by {
+    text-decoration: underline; }
+
+/*FOOTER - END*/
 .hamburger.active {
   display: flex;
   flex-direction: column;
@@ -153,41 +202,7 @@ input[type="search"] {
       transform: rotate(-45deg);
       top: 0; }
 
-.navbar {
-  display: none; }
-  .navbar.open {
-    display: block;
-    max-width: 1140px;
-    width: 100vw;
-    background: linear-gradient(to bottom, #254492, #216eb8);
-    height: 150vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 7;
-    animation: moveInTop ease-out .3s;
-    margin: 0 auto; }
-
-@keyframes moveInTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-150px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
-
-.nav-links {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  list-style: none;
-  font-size: 1.5rem;
-  margin-top: 100px;
-  z-index: 4; }
-  .nav-links li a {
-    color: #fff;
-    text-decoration: none; }
-
+/* <<<<-----------------<<< */
 .main {
   max-width: 1140px;
   margin: 0 auto;
@@ -533,19 +548,6 @@ input[type="range"]::-moz-range-thumb {
   height: 15px; }
 
 /*CONNECTION PAGE - END*/
-/*FOOTER - START*/
-.footer {
-  background: linear-gradient(to right, #254492, #216eb8); }
-  .footer-container {
-    text-align: center;
-    padding: 30px 0;
-    color: #fff;
-    max-width: 1140px;
-    min-height: 200px; }
-  .footer-created-by {
-    text-decoration: underline; }
-
-/*FOOTER - END*/
 /*INSCRIPTION PAGE - START*/
 .inscription-form {
   display: grid;
@@ -794,7 +796,7 @@ table td::before {
     color: #2b74bb;
     font-size: 2.7rem; }
   .contact-info-sub-heading {
-    color: rgba(0, 0, 0, 0.05);
+    color: black;
     font-size: 1.7rem;
     display: block;
     font-weight: bold; }
