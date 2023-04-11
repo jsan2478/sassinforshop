@@ -11,10 +11,9 @@
 @import "layout/header";
 @import "layout/footer";
 
-
 @import "components/button";
 
-@import "pages/home"; /* <<<<-----------------<<< */
+@import "partials/home"; /* <<<<-----------------<<< */
 
 
 
@@ -34,7 +33,7 @@
   margin: 20px 0 50px 0;
   max-width: $max-width;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 20px ;
   &-arrow {
     color: $orange;
     font-size: 1rem;

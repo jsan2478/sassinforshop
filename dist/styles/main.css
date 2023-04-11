@@ -15,12 +15,14 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.6rem;
-  line-height: 1.7;
-  color: #777;
   background-color: #e4e4e4;
   margin-bottom: 0;
   box-sizing: border-box; }
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777; }
 
 .header {
   background: linear-gradient(to left, #254492, #216eb8);
