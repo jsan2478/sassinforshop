@@ -1,0 +1,55 @@
+
+thead {
+  display: none;
+  @include respond(tablet-portrait) {
+    display: table-header-group;
+  }}
+
+table tr {
+  display: block;
+  width: 100%;
+  @include respond(tablet-portrait) {
+      border-bottom: none;
+      display: table-row;
+      width: auto; }
+  }
+
+
+table th {
+  display: block;
+  width: 100%;
+  @include respond(tablet-portrait) {
+      display: table-cell;
+      width: auto;
+    padding: 7px 15px;}
+  }
+
+table td {
+  text-align: right;
+  position: relative;
+  display: block;
+  width: 100%;
+  @include respond(tablet-portrait) {
+      display: table-cell;
+      width: auto;
+      text-align: left;
+    padding: 7px 15px;
+  }
+  }
+
+table tbody tr:first-child td {
+  border-bottom: 1px solid $light-blue;
+  @include respond(tablet-portrait) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid $light-blue;
+    border-bottom: 1px solid $light-blue;
+  }}
+
+table td::before {
+  content: attr(data-label);
+  position: absolute;
+  left: 0;
+  @include respond(tablet-portrait) {
+      content: none; }
+  }

@@ -1,0 +1,138 @@
+
+
+
+
+.products-page {
+  &-heading {
+    color: $light-blue;
+    font-size: 1.7rem;
+    margin-top: 20px; }
+  &-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+  &-aside {
+    background-color: $white;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @include respond(tablet-landscape) {
+      max-width: 300px;
+    }}
+  @include respond(tablet-portrait) {
+    &-main {
+      flex-direction: row;
+      gap: 20px;
+      align-items: flex-start; }
+    &-aside {
+      width: 2400px; }
+    &-article {
+      margin-top: 0;
+      background-color: red; }
+    &-img-container {
+      margin-left: auto;
+      margin-right: auto; }
+  }
+}
+
+
+
+
+.page-number {
+  padding: 0 10px;
+  border: 1px solid $dark-blue;
+  color: $dark-blue;
+  font-size: 1.7rem;
+  background-color: $white;
+  &.active {
+    border: 1px solid $orange-product-color; }}
+
+
+
+.article {
+  position: relative;
+  display: block;
+  margin: 100px auto;
+  @include respond(tablet-portrait) {
+    margin: 0 auto 100px auto; }
+}
+
+.products-list {
+  display: inline-flex;
+  flex-direction: column;
+  @include respond(tablet-portrait) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+
+.top-page-numbers {
+  top: -50px; }
+
+.bottom-page-numbers {
+  bottom: -50px; }
+
+
+
+
+.product {
+  width: 100%;
+  max-width: 450px;
+  background-color: $white;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+  @include respond(mobile-portrait) {
+    width: 100%;                               /* --------------- */
+  }
+  @include respond(tablet-portrait) {
+    width: 40%;
+  }
+  @include respond(tablet-landscape) {
+    width: 31%;
+  }
+  &-img {
+    width: 100%;
+    &-container {
+      width: 90%;
+      max-width: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }}
+  &-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 2rem;}
+  &-heading {
+    color: $dark-blue-product-color;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    @include respond(tablet-landscape) {
+      font-size: 2.3rem;
+    }
+    &-price {
+      color: $orange-product-color;
+      font-weight: bold;
+      font-size: 2rem; }}
+  &-page-numbers {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    position: absolute;
+    @include respond(tablet-portrait) {
+      flex: 1;
+      min-width: 240px;}}
+}
+
+
+

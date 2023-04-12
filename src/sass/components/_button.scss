@@ -9,12 +9,18 @@
     height: 20px;
     position: absolute;
     top: 20px;
-    right: 20px;}
+    right: 20px;
+    @include respond(tablet-portrait) {
+      display: none;
+    }}
   &-line {
     width: 100%;
     height: 3px;
     background: $orange;
-    border-radius: 3px; } }
+    border-radius: 3px; }
+  @include respond(tablet-portrait) {
+    display: none;
+  }}
 
 
 .x-button {
@@ -28,7 +34,10 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    z-index: 17; }
+    z-index: 17;
+    @include respond(tablet-portrait) {
+      display: none;
+    }}
   &-line {
     height: 31px;
     background-color: $white;
@@ -45,4 +54,69 @@
       transform: rotate(-45deg);
       top: 0; }
   }
+  @include respond(tablet-portrait) {
+      display: none;
+  }
 }
+
+
+
+
+
+
+.add-product-button {
+  background-color: $dark-blue;
+  padding: 8px 25px 6px 15px;
+  border-radius: 3px;
+  border: none;
+  margin-left: auto;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  &-img {
+    width: 15px;
+    margin-left: auto;
+    margin-right: auto; }}
+
+
+
+
+
+/*CART PAGE - START*/
+
+
+.checkout {
+  display: inline-block;
+  width: 200px;
+  padding: 5px 0;
+  margin-top: 20px;
+  border: none;
+  border-radius: 7px;
+  color: $white;
+  background-color: $darker-blue;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all ease-out .3s;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px); }
+  &:active {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px); }
+  & i {
+    margin-left: 5px;
+    display: inline-block;
+    margin-top: 5px;
+    transition: all ease-out .3s;}
+  &-btn-container {
+    width: 100%;
+    text-align: right; }
+  &-btn-check-icon {
+    padding-right: 15px; }
+  @include respond(tablet-portrait) {
+      width: 200px; }
+  }
+
+/*CART PAGE - END */

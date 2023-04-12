@@ -1,0 +1,13 @@
+/*ORDER PAGE - START*/
+
+.order-page-main {
+  background-color: $white;
+  padding: 20px 20px 40px 20px;
+  max-width: $max-width;
+  margin: 0 20px 50px;
+  @include respond(tablet-landscape) {
+    width: 100%;
+    margin: auto;
+  }}
+
+/*ORDER PAGE - END*/
