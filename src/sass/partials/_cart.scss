@@ -4,10 +4,39 @@
   &-main {
     background-color: $white;
     padding: 20px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    position: relative;
+    &-container {
+      margin-bottom: 50px;
+      @include respond (tablet-portrait) {
+        margin-bottom: 150px;
+      }
+    }
+  }
   &-table {
     width: 100%;
     border-collapse: collapse; }
 }
+.cart-items-status-heading {
+  color: $dark-blue-product-color;
+  margin-bottom: 40px;
+}
+
+.last-login {
+  position: absolute;
+  right: 20px;
+  top: 10px;;
+  display: flex;
+  flex-direction: column;
+  & span {
+    color: $dark-blue-product-color;
+    font-weight: bold;
+  }
+  @include respond(tablet-landscape) {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
 
 /*CART PAGE - END */

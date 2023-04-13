@@ -2,9 +2,10 @@
 
 .order-page-main {
   background-color: $white;
-  padding: 20px 20px 40px 20px;
+  padding: 20px 20px 40px 30px;
   max-width: $max-width;
-  margin: 0 20px 50px;
+  margin: 0 0 50px 0;
+
   @include respond(tablet-landscape) {
     width: 100%;
     margin: auto;

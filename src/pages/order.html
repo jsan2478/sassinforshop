@@ -52,17 +52,16 @@
     </div>
 </header>
 
-<div class="sub-nav">
-    <a href="../../index.html"> <img src="../images/home.png" alt="Home icon" class="home-icon"></a>
-    <i class="fa-solid fa-angle-right sub-nav-arrow" ></i>
-    <a href="order.html" class="navigation-button connection">Command</a>
-</div>
-<div class="main-container">
 
 
-<main class="order-page-main">
+<div class="main">
+    <div class="sub-nav">
+        <a href="../../index.html"> <img src="../images/home.png" alt="Home icon" class="home-icon"></a>
+        <i class="fa-solid fa-angle-right sub-nav-arrow" ></i>
+        <a href="order.html" class="navigation-button connection">Command</a>
+    </div>
+<main class="order-page-main"> <!--order-page-main-->
     <h2 class="order-form-heading">Command</h2>
-
     <form class="order-form">
         <h3 class="order-form-sub-heading">Adresse de livrasion*</h3>
         <label for="street">Rue* <br>
@@ -134,7 +133,7 @@
 
 
     </form>
-    <form class="order-form payment-form">
+    <div class="order-form payment-form">
         <h3 class="order-form-sub-heading">Moyen de paiement</h3>
         <form action="">
             <label for="payment-method">Moyen de paiement <br>
@@ -145,13 +144,11 @@
             </select>
             </label>
         </form>
-        <button class="order-submit-btn" type="submit"><i class="fa-solid fa-floppy-disk"></i>Valider</button>
-
-
-    </form>
+    </div>
+    <button class="order-submit-btn" type="submit"><i class="fa-solid fa-floppy-disk"></i>Valider</button>
 </main>
 </div>
-    <footer class="footer">
+<footer class="footer">
     <div class="footer-container">
         <p>© Inforshop.store & site by <span class="footer-created-by">ISL SCRL</span></p>
     </div>
@@ -159,3 +156,5 @@
 <script src="../scripts/main.js"></script>
 </body>
 </html>
+
+

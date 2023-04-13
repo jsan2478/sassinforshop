@@ -1,6 +1,7 @@
 
 thead {
   display: none;
+  color: $dark-blue-product-color;
   @include respond(tablet-portrait) {
     display: table-header-group;
   }}
@@ -29,6 +30,7 @@ table td {
   position: relative;
   display: block;
   width: 100%;
+  margin-bottom: 30px;
   @include respond(tablet-portrait) {
       display: table-cell;
       width: auto;
@@ -36,6 +38,11 @@ table td {
     padding: 7px 15px;
   }
   }
+
+//table tbody td:nth-child(2n+3){
+//  border: 1px solid #f3f3f3;
+//}
+
 
 table tbody tr:first-child td {
   border-bottom: 1px solid $light-blue;
@@ -53,3 +60,7 @@ table td::before {
   @include respond(tablet-portrait) {
       content: none; }
   }
+
+.sub-total-price, .tax-amount, .total-price {
+  color: $dark-blue-product-color;
+}

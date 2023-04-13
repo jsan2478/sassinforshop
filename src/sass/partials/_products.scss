@@ -57,8 +57,13 @@
   position: relative;
   display: block;
   margin: 100px auto;
+  padding-top: 0;
+
   @include respond(tablet-portrait) {
-    margin: 0 auto 100px auto; }
+    margin: 0 auto 100px auto;
+    margin-top: 50px;
+    padding-top: 0;
+  }
 }
 
 .products-list {
@@ -76,10 +81,12 @@
 
 
 .top-page-numbers {
-  top: -50px; }
+  top: -50px;
+left: 7px}
 
 .bottom-page-numbers {
-  bottom: -50px; }
+  bottom: -30px;
+left: 7px}
 
 
 

@@ -53,7 +53,7 @@
         <span class="x-button-line x-button-line-second"></span>
     </div>
 </header>
-<main class="main">
+<main class="main cart-page-main-container">
     <div class="sub-nav">
         <a href="../../index.html"> <img src="../images/home.png" alt="Home icon" class="home-icon"></a>
         <i class="fa-solid fa-angle-right sub-nav-arrow"></i>
@@ -61,6 +61,12 @@
     </div>
     <div class="cart-page-main cart-page">
         <h2 class="cart-items-status-heading">Mon panier</h2>
+        <div class="last-login">Dernière mise à jour:
+            <div class="last-login-time-container">
+                <span class="last-login-date">27/03/2022</span>
+                <span class="last-login-hour">20:25:08</span>
+            </div>
+        </div>
         <table class="cart-page-table">
             <thead>
             <tr>
@@ -89,7 +95,7 @@
                 <td></td>
                 <td>Total HTVA</td>
                 <td></td>
-                <td><strong><span>100</span>€</strong></td>
+                <td class="sub-total-price"><strong><span>100</span>€</strong></td>
             </tr>
             <tr>
                 <td></td>
@@ -97,15 +103,15 @@
                 <td></td>
                 <td >Total TVA</td>
                 <td></td>
-                <td ><strong><span>21</span>€</strong></td>
+                <td class="tax-amount" ><strong><span>21</span>€</strong></td>
             </tr>
             <tr>
                 <td ></td>
                 <td></td>
                 <td></td>
-                <td >Total TVAC</td>
+                <td>Total TVAC</td>
                 <td></td>
-                <td ><strong><span>121</span>€</strong></td>
+                <td class="total-price" ><strong><span>121</span>€</strong></td>
             </tr>
             </tbody>
         </table>
