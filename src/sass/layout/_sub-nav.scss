@@ -10,24 +10,23 @@
   height: 28px;
   flex-wrap: wrap;
   align-items: center;
-  //margin: 20px 0 50px 0;
-  margin: 30px 0 20px 0;
+  margin: 30px 0 50px 0;
   max-width: $max-width;
-  //padding-left: 20px;
-  //padding-right: 20px ;
   &-arrow {
     color: $orange;
     font-size: 1rem;
     font-weight: bold;
     margin-top: auto;
     margin-bottom: auto; }
+  @include respond(mobile-portrait) {
+    //margin-bottom: 0;
+  }
   @include respond(tablet-portrait) {
-      margin-left: auto;
-      margin-right: auto;
       padding-left: 0;
-      padding-right: 0; }
+      padding-right: 0;
+    margin: 30px auto 0 auto;
+  }
 }
-
 
 .home-icon {
   box-sizing: content-box;

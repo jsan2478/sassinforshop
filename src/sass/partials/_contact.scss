@@ -6,8 +6,11 @@
   width: 100%;
   &-container {
     display: block;
-    margin: auto;
-    width: 100%; }}
+    margin: 20px auto auto auto;
+    width: 100%;
+  }
+
+}
 
 
 .contact-page-main-container {
@@ -17,9 +20,11 @@
   gap: 20px;
   background-color: $white;
   padding: 50px 20px;
+
   @include respond(tablet-portrait) {
     grid-template-columns: 0.7fr 0.3fr;
     grid-template-rows: 1fr; }
+
   }
 
 

@@ -98,24 +98,24 @@
     </form>
     <form class="order-form">
         <h3 class="order-form-sub-heading">Adresse de facturation</h3>
-        <label for="street">Rue* <br>
-            <input type="text" class="street" name="street" placeholder="Rue" required>
+        <label for="street-id">Rue* <br>
+            <input type="text" class="street" id="street-id" name="street" placeholder="Rue" required>
             <i class="fa-solid fa-house address-icon"></i>
         </label>
-        <label for="house-number">Numéro de maison*<br>
-            <input type="text" class="house-number" name="house-number" placeholder="Numéro de maison" required>
+        <label for="house-number-id">Numéro de maison*<br>
+            <input type="text" class="house-number" id="house-number-id" name="house-number" placeholder="Numéro de maison" required>
             <i class="fa-solid fa-tag address-icon"></i>
 
         </label>
-        <label for="city">Localité*<br>
-            <input type="text" class="city" name="locality" placeholder="Localité" required>
+        <label for="city-id">Localité*<br>
+            <input type="text" class="city" id="city-id" name="locality" placeholder="Localité" required>
             <i class="fa-solid fa-city address-icon"></i>
 
         </label>
 
 
-        <label for="zip">Code Postal*<br>
-            <input type="text" class="zip" name="zip" placeholder="Code Postal" required>
+        <label for="zip-id">Code Postal*<br>
+            <input type="text" class="zip"  id="zip-id" name="zip" placeholder="Code Postal" required>
             <i class="fa-solid fa-city address-icon"></i>
 
         </label>
@@ -135,7 +135,7 @@
     </form>
     <div class="order-form payment-form">
         <h3 class="order-form-sub-heading">Moyen de paiement</h3>
-        <form action="">
+        <form action="https://jsan2478.github.io/sassinforshop/" method="POST">
             <label for="payment-method">Moyen de paiement <br>
             <select name="payment-method" id="payment-method">
                 <option value="credit-card">Credit Card</option>

@@ -224,7 +224,7 @@ input[type="search"] {
   height: 28px;
   flex-wrap: wrap;
   align-items: center;
-  margin: 30px 0 20px 0;
+  margin: 30px 0 50px 0;
   max-width: 1140px; }
   .sub-nav-arrow {
     color: rgba(227, 136, 63, 0.91);
@@ -234,10 +234,9 @@ input[type="search"] {
     margin-bottom: auto; }
   @media only screen and (min-width: 768px) {
     .sub-nav {
-      margin-left: auto;
-      margin-right: auto;
       padding-left: 0;
-      padding-right: 0; } }
+      padding-right: 0;
+      margin: 30px auto 0 auto; } }
 
 .home-icon {
   box-sizing: content-box;
@@ -839,7 +838,7 @@ table td::before {
   width: 100%; }
   .map-container {
     display: block;
-    margin: auto;
+    margin: 20px auto auto auto;
     width: 100%; }
 
 .contact-page-main-container {
