@@ -3,3 +3,32 @@ body {
   line-height: 1.7;
   color: #777;
   }
+
+
+//HOME PAGE START
+
+
+
+.home-page {
+  &-main {
+    font-family: Raleway, sans-serif;
+  }
+  &-h1 {
+    font-size: 5.5rem;
+    color: #032d60;
+    line-height: 1.1;
+    font-weight: 600;
+  }
+  &-p {
+    font-size: 2rem;
+    color: #181818;
+    line-height: 1.5;
+  }
+}
+
+
+
+
+
+
+//HOME PAGE ENDS
