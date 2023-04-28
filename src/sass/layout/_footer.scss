@@ -1,0 +1,23 @@
+/*FOOTER - START*/
+.footer {
+  background: linear-gradient(to right, $dark-blue, $light-blue);
+  &-container {
+    text-align: center;
+    padding: 30px 0;
+    color: $white;
+    max-width: $max-width;
+    min-height: 200px; }
+  &-created-by {
+    text-decoration: underline; }
+  @include respond(tablet-portrait) {
+    &-container {
+      text-align: left;
+      padding: 30px 20px;
+      margin: 0 auto;
+    }
+  }}
+
+
+
+
+/*FOOTER - END*/

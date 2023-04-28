@@ -1,0 +1,15 @@
+
+$screen-breakpoints: (
+        mobile-portrait: 480px,
+        tablet-portrait: 768px,
+        tablet-landscape: 1024px,
+        desktop: 1280px,
+);
+
+@mixin respond($screen-breakpoint) {
+  @if map-has-key($screen-breakpoints, $screen-breakpoint){
+    @media only screen and (min-width: #{map-get($screen-breakpoints, $screen-breakpoint)}) {@content}
+}
+}
+
+

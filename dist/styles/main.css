@@ -45,15 +45,54 @@ body {
   font-family: Raleway, sans-serif; }
 
 .home-page-h1 {
-  font-size: 5.5rem;
-  color: #032d60;
+  font-size: 4rem;
+  color: #386cb2;
   line-height: 1.1;
   font-weight: 600; }
+  @media only screen and (min-width: 480px) {
+    .home-page-h1 {
+      font-size: 5rem; } }
+  @media only screen and (min-width: 768px) {
+    .home-page-h1 {
+      font-size: 5.2rem; } }
+  @media only screen and (min-width: 1024px) {
+    .home-page-h1 {
+      font-size: 5.5rem; } }
 
 .home-page-p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #181818;
   line-height: 1.5; }
+
+.home-page-button {
+  font-family: Raleway, sans-serif;
+  font-size: 1.5rem; }
+
+.nav-links {
+  font-size: 2rem; }
+  @media only screen and (min-width: 768px) {
+    .nav-links {
+      font-size: 1.7rem; } }
+
+/*PRODUCT PAGE DETAIL - START*/
+.product-description-heading {
+  color: #216eb8;
+  font-weight: normal;
+  font-size: 2.4rem; }
+
+.product-description .product-info-heading {
+  color: #216eb8;
+  font-weight: normal;
+  font-size: 2rem; }
+
+.product-description .product-info-detail {
+  line-height: 1.4;
+  font-size: 1.7rem; }
+
+/*PRODUCT PAGE DETAIL - END*/
+.cart-count {
+  font-size: 1.4rem;
+  color: #fff; }
 
 .header {
   background: linear-gradient(to left, #254492, #216eb8);
@@ -90,8 +129,6 @@ body {
   height: 100%; }
 
 .cart-count {
-  font-size: 1.4rem;
-  color: #fff;
   padding: 0 6px; }
   .cart-count-container {
     position: absolute;
@@ -190,7 +227,6 @@ input[type="search"] {
   text-decoration: none;
   text-align: center;
   list-style: none;
-  font-size: 1.5rem;
   margin-top: 100px;
   z-index: 4; }
   .nav-links li a {
@@ -384,15 +420,14 @@ input[type="search"] {
   padding: 12px 40px;
   box-sizing: border-box;
   border-radius: 5px;
-  font-family: Raleway,sans-serif;
-  margin-top: 20px; }
+  margin-top: 20px;
+  border: 2px solid #3274cc; }
   .home-page-button-left {
     background-color: #3274cc;
     color: #fff;
     border: 2px solid #3274cc;
     margin-right: 20px; }
   .home-page-button-right {
-    border: 2px solid #3274cc;
     color: #3274cc; }
 
 .brand-price-range {
@@ -810,11 +845,7 @@ table td::before {
   @media only screen and (min-width: 768px) {
     .home-page-main {
       flex-direction: row;
-      gap: 40px;
-      padding: 20px 20px 20px 30px; } }
-  @media only screen and (min-width: 1024px) {
-    .home-page-main {
-      padding: 0 20px 0 30px; } }
+      gap: 30px; } }
 
 .home-page-left {
   display: flex;
@@ -822,27 +853,20 @@ table td::before {
   justify-content: center;
   gap: 30px; }
 
-.home-page-image {
-  width: 100%; }
-  .home-page-image-container {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 600px; }
-    @media only screen and (min-width: 768px) {
-      .home-page-image-container {
-        width: 100%; } }
-  .home-page-image-banner {
-    width: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(-20deg); }
-    @media only screen and (min-width: 768px) {
-      .home-page-image-banner {
-        width: 50%;
-        top: -20px;
-        left: -20px; } }
+.inforshop-main-image {
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  width: 200px; }
+  @media only screen and (min-width: 480px) {
+    .inforshop-main-image {
+      width: 250px; } }
+  @media only screen and (min-width: 768px) {
+    .inforshop-main-image {
+      width: 300px; } }
+  @media only screen and (min-width: 1024px) {
+    .inforshop-main-image {
+      width: 350px; } }
 
 /*PRODUCT PAGE DETAIL - START*/
 .product-description {
@@ -853,10 +877,7 @@ table td::before {
   padding: 20px;
   column-gap: 20px; }
   .product-description-heading {
-    grid-column: 1/-1;
-    color: #216eb8;
-    font-weight: normal;
-    font-size: 2.4rem; }
+    grid-column: 1/-1; }
   .product-description-img {
     width: 100%;
     max-width: 500px; }
@@ -867,22 +888,14 @@ table td::before {
       margin-right: auto; }
   @media only screen and (min-width: 768px) {
     .product-description {
-      display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
-      background-color: #fff;
       margin-top: 20px;
       padding: 20px; } }
 
-.product-info-heading {
-  color: #216eb8;
-  font-weight: normal;
-  font-size: 2rem; }
-
 .product-info-detail {
-  line-height: 1.4;
-  font-size: 1.7rem;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  margin-top: 23px; }
 
 .product-info-sub-container {
   display: flex;

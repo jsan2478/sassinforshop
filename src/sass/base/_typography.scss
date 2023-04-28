@@ -2,33 +2,86 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
-  }
+}
 
 
 //HOME PAGE START
-
 
 
 .home-page {
   &-main {
     font-family: Raleway, sans-serif;
   }
+
   &-h1 {
-    font-size: 5.5rem;
-    color: #032d60;
+    font-size: 4rem;
+    color: $dark-blue-product-color;
     line-height: 1.1;
     font-weight: 600;
+    @include respond(mobile-portrait) {
+      font-size: 5rem;
+    }
+    @include respond(tablet-portrait) {
+      font-size: 5.2rem;
+    }
+    @include respond(tablet-landscape) {
+      font-size: 5.5rem;
+    }
   }
+
   &-p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #181818;
     line-height: 1.5;
   }
+
+  &-button {
+    font-family: Raleway, sans-serif;
+    font-size: 1.5rem;
+  }
 }
 
-
-
-
-
+.nav-links {
+  font-size: 2rem;
+  @include respond(tablet-portrait) {
+    font-size: 1.7rem;
+  }
+}
 
 //HOME PAGE ENDS
+
+
+
+
+
+/*PRODUCT PAGE DETAIL - START*/
+.product-description {
+  &-heading {
+    color: $light-blue;
+    font-weight: normal;
+    font-size: 2.4rem; }
+
+.product-info {
+  &-heading {
+    color: $light-blue;
+    font-weight: normal;
+    font-size: 2rem;
+  }
+
+  &-detail {
+    line-height: 1.4;
+    font-size: 1.7rem;
+
+  }
+}}
+
+/*PRODUCT PAGE DETAIL - END*/
+
+
+//HEADING START
+
+.cart-count {
+  font-size: 1.4rem;
+  color: $white;
+}
+//HEADING ENDS
