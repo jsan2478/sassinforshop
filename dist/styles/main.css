@@ -28,14 +28,14 @@ body {
 .main-container {
   padding: 0 20px 50px 20px; }
 
+@media only screen and (min-width: 768px) {
+  .main {
+    margin-bottom: 0; } }
+
 @media only screen and (min-width: 1280px) {
   .main {
     padding-left: 0;
     padding-right: 0; } }
-
-@media only screen and (min-width: 768px) {
-  .main {
-    margin-bottom: 0; } }
 
 body {
   font-size: 1.6rem;
@@ -43,7 +43,7 @@ body {
   color: #777; }
 
 .home-page-main {
-  font-family: Raleway, sans-serif; }
+  font-family: "Calibri", sans-serif; }
 
 .home-page-h1 {
   font-size: 4rem;
@@ -99,7 +99,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 1140px;
+    max-width: 1100px;
     margin: 0 auto;
     align-items: flex-start;
     gap: 30px; }
@@ -160,14 +160,12 @@ body {
 
 /*REMOVING SECOND DEFAULT SEARCH ICON - START*/
 input[type="search"] {
-  /*-webkit-appearance: none;*/
-  /*-moz-appearance: none;*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   background: transparent; }
   input[type="search"]::-webkit-search-cancel-button {
-    /*-webkit-appearance: none;*/
-    appearance: none;
-  }
+    -webkit-appearance: none; }
 
 /*REMOVING SECOND DEFAULT SEARCH ICON -END*/
 .form-search-box {
@@ -198,7 +196,7 @@ input[type="search"] {
   display: none; }
   .navbar.open {
     display: block;
-    max-width: 1140px;
+    max-width: 1100px;
     width: 100vw;
     background: linear-gradient(to bottom, #254492, #216eb8);
     height: 150vh;
@@ -214,7 +212,7 @@ input[type="search"] {
   @media only screen and (min-width: 768px) {
     .navbar {
       display: block;
-      max-width: 1140px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 40px 0 0 0;
       position: relative;
@@ -251,7 +249,7 @@ input[type="search"] {
     text-align: center;
     padding: 30px 0;
     color: #fff;
-    max-width: 1140px;
+    max-width: 1100px;
     min-height: 200px; }
   .footer-created-by {
     text-decoration: underline; }
@@ -263,7 +261,7 @@ input[type="search"] {
 
 /*FOOTER - END*/
 .main {
-  max-width: 1140px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px 50px 20px; }
 
@@ -275,7 +273,7 @@ input[type="search"] {
   flex-wrap: wrap;
   align-items: center;
   margin: 30px 0 50px 0;
-  max-width: 1140px; }
+  max-width: 1100px; }
   .sub-nav-arrow {
     color: rgba(227, 136, 63, 0.91);
     font-size: 1rem;
@@ -483,19 +481,18 @@ input[type="search"] {
     top: -15px;
     background: none;
     pointer-events: none;
-    /*-webkit-appearance: none;*/
-    /*-moz-appearance: none;*/
-    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     border-bottom: none; }
 
 input[type="range"]::-webkit-slider-thumb {
   height: 10px;
   width: 10px;
   border-radius: 50%;
+  /*background: #17A2B8;*/
   background-color: #fff;
   pointer-events: auto;
-  /*-webkit-appearance: none;*/
-  appearance: none;
+  -webkit-appearance: none;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
   border: 14px solid #54b6eb;
   box-sizing: content-box; }
@@ -507,8 +504,7 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 50%;
   background: #17A2B8;
   pointer-events: auto;
-  /*-moz-appearance: none;*/
-  appearance: none;
+  -moz-appearance: none;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.05); }
 
 /*PRICE SLIDER - END*/
@@ -597,6 +593,10 @@ input[type="range"]::-moz-range-thumb {
       .connection-form-inscription-btn {
         margin-bottom: 0;
         padding: 5px 15px; } }
+
+#connection-button {
+  margin-top: 20px;
+  margin-left: 0; }
 
 .connection-button-check-icon {
   margin-right: 7px;
@@ -930,8 +930,8 @@ table td::before {
     margin-left: 0; } }
 
 #colors {
-  /*-webkit-appearance: none;*/
-  /*-moz-appearance: none;*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   border: none; }
   #colors:focus {
@@ -1005,7 +1005,7 @@ table td::before {
 .order-page-main {
   background-color: #fff;
   padding: 20px 20px 40px 30px;
-  max-width: 1140px;
+  max-width: 1100px;
   margin: 0 0 50px 0; }
   @media only screen and (min-width: 1024px) {
     .order-page-main {

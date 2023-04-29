@@ -157,11 +157,10 @@ input[type="range"] {
     border-radius: 4px;
     font-size: 1.1rem;
     max-width: 120px;
-    margin-top: 15px;
+    margin-top: 15px ;
     margin-bottom: 30px;
     @include respond(tablet-portrait) {
     margin-top: 0;
-
     }
   }
   &-inscription-btn {
@@ -179,9 +178,11 @@ input[type="range"] {
     margin-bottom: 0;
     padding: 5px 15px;
   }
-
   }}
-
+#connection-button {
+  margin-top: 20px;
+  margin-left: 0;
+}
 
 .connection-button-check-icon {
   margin-right: 7px;

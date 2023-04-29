@@ -10,7 +10,7 @@ body {
 
 .home-page {
   &-main {
-    font-family: Raleway, sans-serif;
+    font-family: "Calibri", sans-serif;
   }
 
   &-h1 {
@@ -18,9 +18,7 @@ body {
     color: $dark-blue-product-color;
     line-height: 1.1;
     font-weight: 600;
-    @include respond(mobile-portrait) {
 
-    }
     @include respond(tablet-portrait) {
       font-size: 4rem;
     }
