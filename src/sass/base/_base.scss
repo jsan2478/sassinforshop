@@ -25,13 +25,12 @@ body {
   &-container {
     padding: 0 20px 50px 20px;
   }
-
+  @include respond(tablet-portrait) {
+    margin-bottom: 0
+  }
   @include respond(desktop) {
     padding-left: 0;
     padding-right: 0;
-  }
-  @include respond(tablet-portrait) {
-    margin-bottom: 0
   }
 }
 

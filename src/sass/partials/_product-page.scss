@@ -23,8 +23,6 @@
       margin-right: auto;
     }
   }
-
-
   @include respond(tablet-portrait) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
