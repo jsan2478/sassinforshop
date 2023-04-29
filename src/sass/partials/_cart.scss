@@ -38,5 +38,11 @@
   }
 }
 
+#cart-main {
+  @include respond(desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 /*CART PAGE - END */

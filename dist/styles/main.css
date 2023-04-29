@@ -27,10 +27,11 @@ body {
 
 .main-container {
   padding: 0 20px 50px 20px; }
-  @media only screen and (min-width: 1024px) {
-    .main-container {
-      padding-left: 20px;
-      padding-right: 20px; } }
+
+@media only screen and (min-width: 1280px) {
+  .main {
+    padding-left: 0;
+    padding-right: 0; } }
 
 @media only screen and (min-width: 768px) {
   .main {
@@ -49,15 +50,12 @@ body {
   color: #386cb2;
   line-height: 1.1;
   font-weight: 600; }
-  @media only screen and (min-width: 480px) {
-    .home-page-h1 {
-      font-size: 5rem; } }
   @media only screen and (min-width: 768px) {
     .home-page-h1 {
-      font-size: 5.2rem; } }
+      font-size: 4rem; } }
   @media only screen and (min-width: 1024px) {
     .home-page-h1 {
-      font-size: 5.5rem; } }
+      font-size: 4rem; } }
 
 .home-page-p {
   font-size: 1.5rem;
@@ -216,7 +214,7 @@ input[type="search"] {
       display: block;
       max-width: 1140px;
       margin: 0 auto;
-      padding: 40px 0 0 10px;
+      padding: 40px 0 0 0;
       position: relative;
       animation: none;
       background: transparent;
@@ -422,6 +420,12 @@ input[type="search"] {
   border-radius: 5px;
   margin-top: 20px;
   border: 2px solid #3274cc; }
+  .home-page-button:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px); }
+  .home-page-button:active {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px); }
   .home-page-button-left {
     background-color: #3274cc;
     color: #fff;
@@ -543,7 +547,7 @@ input[type="range"]::-moz-range-thumb {
   background-color: #fff;
   padding: 40px 20px 15px 20px;
   margin-top: 20px;
-  margin-bottom: 170px; }
+  margin-bottom: 20px; }
   .connection-form-heading {
     font-size: 1.9rem;
     color: #216eb8;
@@ -571,6 +575,9 @@ input[type="range"]::-moz-range-thumb {
     max-width: 120px;
     margin-top: 15px;
     margin-bottom: 30px; }
+    @media only screen and (min-width: 768px) {
+      .connection-form-connection-btn {
+        margin-top: 0; } }
   .connection-form-inscription-btn {
     display: block;
     background-color: #263585;
@@ -610,11 +617,11 @@ input[type="range"]::-moz-range-thumb {
 .inscription-form {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   background-color: #fff;
   color: #216eb8;
   margin-top: 50px;
-  padding: 30px 20px 60px 20px;
+  padding: 30px 20px 0 20px;
   gap: 20px; }
   .inscription-form-heading {
     grid-column: 1/-1; }
@@ -868,6 +875,11 @@ table td::before {
     .inforshop-main-image {
       width: 350px; } }
 
+@media only screen and (min-width: 1280px) {
+  #main-home {
+    padding-left: 0;
+    padding-right: 0; } }
+
 /*PRODUCT PAGE DETAIL - START*/
 .product-description {
   display: grid;
@@ -920,6 +932,11 @@ table td::before {
   border: none; }
   #colors:focus {
     outline: none; }
+
+@media only screen and (min-width: 1280px) {
+  #product-main {
+    padding-left: 0;
+    padding-right: 0; } }
 
 /*PRODUCT PAGE DETAIL - END*/
 /*CONTACT PAGE - START*/
@@ -974,6 +991,11 @@ table td::before {
     font-style: normal;
     text-decoration: none; }
 
+@media only screen and (min-width: 1280px) {
+  #contact-main {
+    padding-left: 0;
+    padding-right: 0; } }
+
 /*CONTACT PAGE - END*/
 /*ORDER PAGE - START*/
 .order-page-main {
@@ -985,6 +1007,15 @@ table td::before {
     .order-page-main {
       width: 100%;
       margin: auto; } }
+
+@media only screen and (min-width: 1280px) {
+  #order-main {
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media only screen and (min-width: 768px) {
+  #order-sub-nav {
+    margin-bottom: 40px; } }
 
 /*ORDER PAGE - END*/
 .products-page-heading {
@@ -1114,6 +1145,11 @@ table td::before {
         flex: 1;
         min-width: 240px; } }
 
+@media only screen and (min-width: 1280px) {
+  #products-main {
+    padding-left: 0;
+    padding-right: 0; } }
+
 /*CART PAGE - START*/
 .cart-page-main {
   background-color: #fff;
@@ -1148,4 +1184,18 @@ table td::before {
       flex-direction: row;
       gap: 10px; } }
 
+@media only screen and (min-width: 1280px) {
+  #cart-main {
+    padding-left: 0;
+    padding-right: 0; } }
+
 /*CART PAGE - END */
+@media only screen and (min-width: 1280px) {
+  #connection-main {
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media only screen and (min-width: 1280px) {
+  #inscription-main {
+    padding-left: 0;
+    padding-right: 0; } }

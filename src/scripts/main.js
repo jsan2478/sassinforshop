@@ -12,7 +12,6 @@ const maxQuantity = document.querySelector(".input-max");
 
 
 
-
 const toggle = function() {
     hamburgerButton.classList.toggle("active");
     closeButton.classList.toggle("active");
@@ -76,3 +75,11 @@ rangeInput.forEach(input =>{
         }
     });
 });
+
+
+// _______________________________________________________________________________________________-
+
+
+
+
+

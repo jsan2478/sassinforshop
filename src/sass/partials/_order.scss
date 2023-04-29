@@ -11,4 +11,16 @@
     margin: auto;
   }}
 
+#order-main {
+  @include respond(desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+#order-sub-nav {
+  @include respond(tablet-portrait) {
+    margin-bottom: 40px;
+  }
+}
 /*ORDER PAGE - END*/
