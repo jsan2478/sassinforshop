@@ -139,10 +139,10 @@
     margin-top: 20px;
     border: 2px solid $home-page-blue-button;
     &:hover {
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
       transform: translateY(-1px); }
     &:active {
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
       transform: translateY(-3px); }
     &-left {
       background-color: $home-page-blue-button;
